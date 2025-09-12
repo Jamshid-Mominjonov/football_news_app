@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "77300007565",
+    "project_id": "newsappauth-fc596",
+    "storage_bucket": "newsappauth-fc596.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77300007565:android:7a6cb05be05721635718c4",
+        "android_client_info": {
+          "package_name": "com.example.football_news_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcRtWci36utAYP1-1G0CYlC4eQDLeu4wA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
