@@ -7,7 +7,7 @@ The app delivers the latest football news with secure authentication, multi-lang
 
 ## ✨ Features
 
-- 🌐 **REST API integration** for fetching football news
+- 🌐 **REST API integration** for fetching the latest football news
 - 🔐 **Firebase Authentication** for user login & signup
 - 🌍 **Multi-language support** with Easy Localization
 - 🌙 **Dark/Light mode** with Shared Preferences

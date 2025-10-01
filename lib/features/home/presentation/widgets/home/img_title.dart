@@ -8,12 +8,14 @@ class ImgTitle extends ConsumerStatefulWidget {
   final Function onTap;
   final String image;
   final String title;
+  final String date;
   final int index;
   final String originalUrl;
   const ImgTitle({
     super.key,
     required this.image,
     required this.title,
+    required this.date,
     required this.index,
     required this.onTap,
     required this.originalUrl,
@@ -103,8 +105,11 @@ class _ImgTitleState extends ConsumerState<ImgTitle> {
             ),
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
             children: [
+              Text(
+                widget.date,
+              ),
+              Spacer(),
               GestureDetector(
                 onTap: () => widget.onTap(),
                 child: Text(

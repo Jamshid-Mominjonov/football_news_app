@@ -70,7 +70,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
-                    ),
+                    ).tr(),
                     SizedBox(height: screenHeight * 0.01),
                     GestureDetector(
                       onTap: (){Navigator.pushReplacementNamed(context, RouteNames.signUpPage);},
@@ -80,7 +80,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                           color: Colors.blue,
                           fontSize: 22,
                         ),
-                      ),
+                      ).tr(),
                     ),
                   ],
                 ),
@@ -191,6 +191,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                 ),
                 itemCount: newsState.newsEntity.length,
                 itemBuilder: (context, index) {
+                  final dateFormat = DateFormat('dd/MM/yyyy').format(newsState.newsEntity[index].publishedAt);
                   return
                   ImgTitle(
                     onTap: () {
@@ -202,6 +203,7 @@ class _HomePageState extends ConsumerState<HomePage> {
                     },
                     image: newsState.newsEntity[index].image ?? '',
                     title: newsState.newsEntity[index].title ?? '',
+                    date: dateFormat,
                     originalUrl: newsState.newsEntity[index].originalUrl ?? '',
                     index:newsState.newsEntity[index].id ?? 0,
                   );
