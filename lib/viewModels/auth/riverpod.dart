@@ -1,14 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:football_news_app/viewModels/auth/manager/sign_in/sign_in_notifier.dart';
-import 'package:football_news_app/viewModels/auth/manager/sign_in/sign_in_state.dart';
-import 'package:football_news_app/viewModels/auth/manager/sign_out/sign_out_notifier.dart';
-import 'package:football_news_app/viewModels/auth/manager/sign_out/sign_out_state.dart';
-import 'package:football_news_app/viewModels/auth/manager/sign_up/sign_up_notifier.dart';
-import 'package:football_news_app/viewModels/auth/manager/sign_up/sign_up_state.dart';
-
-import '../../../data/auth/remote/auth_remote_data_source.dart';
-import '../../../data/repositories/auth/auth_repositories.dart';
+import 'package:football_news_app/viewModels/auth/sign_in/sign_in_notifier.dart';
+import 'package:football_news_app/viewModels/auth/sign_in/sign_in_state.dart';
+import 'package:football_news_app/viewModels/auth/sign_out/sign_out_notifier.dart';
+import 'package:football_news_app/viewModels/auth/sign_out/sign_out_state.dart';
+import 'package:football_news_app/viewModels/auth/sign_up/sign_up_notifier.dart';
+import 'package:football_news_app/viewModels/auth/sign_up/sign_up_state.dart';
+import '../../data/auth/remote/auth_remote_data_source.dart';
+import '../../data/repositories/auth/auth_repositories.dart';
 
 final firebaseAuthProvider = Provider<FirebaseAuth>((ref) => FirebaseAuth.instance);
 

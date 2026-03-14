@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:football_news_app/core/route/route_names.dart';
-import '../../../../viewModels/auth/manager/riverpod.dart';
+import '../../../../viewModels/auth/riverpod.dart';
 import '../../../../viewModels/home/news/news_state.dart';
 import '../../../../viewModels/home/news_provider.dart';
 import '../../../widgets/home/drawer/account_part.dart';
@@ -201,11 +201,11 @@ class _HomePageState extends ConsumerState<HomePage> {
                         arguments: newsState.newsEntity[index].originalUrl,
                       );
                     },
-                    image: newsState.newsEntity[index].image ?? '',
-                    title: newsState.newsEntity[index].title ?? '',
+                    image: newsState.newsEntity[index].image,
+                    title: newsState.newsEntity[index].title,
                     date: dateFormat,
-                    originalUrl: newsState.newsEntity[index].originalUrl ?? '',
-                    index:newsState.newsEntity[index].id ?? 0,
+                    originalUrl: newsState.newsEntity[index].originalUrl,
+                    index:newsState.newsEntity[index].id,
                   );
                 },
               )
