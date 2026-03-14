@@ -7,20 +7,20 @@ import '../../../models/home/news_model.dart';
 class NewsRemoteDataSource {
   final logger = Logger();
 
-  final String _baseUrl = 'football-news11.p.rapidapi.com';
-  final String _apiKey = 'd6d521f0femsh05382e18ec00c6fp1fb1c0jsn99bed1e38873';
+  final String baseUrl = 'football-news11.p.rapidapi.com';
+  final String apiKey = 'd6d521f0femsh05382e18ec00c6fp1fb1c0jsn99bed1e38873';
 
   Future<List<NewsModel>> getNews() async {
     final now = DateTime.now();
     final formattedDate = DateFormat('yyyy-MM-dd').format(now);
-    final Uri uri = Uri.https(_baseUrl, '/api/news-by-date', {
+    final Uri uri = Uri.https(baseUrl, '/api/news-by-date', {
       'date': formattedDate,
       'lang': 'en',
       'page': '1',
     });
     final headers = {
-      'x-rapidapi-host': _baseUrl,
-      'x-rapidapi-key': _apiKey,
+      'x-rapidapi-host': baseUrl,
+      'x-rapidapi-key': apiKey,
     };
     try {
       final response = await http.get(uri, headers: headers);
