@@ -1,6 +1,4 @@
-# Football News App 
-
-⚠️ This project is currently being refactored
+# Football News App
 
 A modern **Football News mobile application** built with **Flutter**, following **MVVM architecture** principles.  
 The app delivers the latest football news with secure authentication, and clean UI.
@@ -26,6 +24,7 @@ The app delivers the latest football news with secure authentication, and clean 
 - **Firebase Authentication**
 - **Hive DB** (local database)
 - **Shared Preferences** (theme persistence)
+- **Easy Localization**
 - **WebView**
 - **MVVM**
 

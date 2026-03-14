@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:football_news_app/core/route/route_names.dart';
-import 'package:football_news_app/features/auth/presentation/pages/sign_up/sign_up_page.dart';
-import 'package:football_news_app/features/home/presentation/pages/favourites/favourites_page.dart';
-import 'package:football_news_app/features/home/presentation/pages/splash/splash_page.dart';
-import '../../features/auth/presentation/pages/sign_in/sign_in_page.dart';
-import '../../features/home/presentation/pages/home/home_page.dart';
-import '../../features/home/presentation/pages/web_view/web_view_page.dart';
+import '../../views/pages/auth/sign_in_page.dart';
+import '../../views/pages/auth/sign_up_page.dart';
+import '../../views/pages/home/favourites/favourites_page.dart';
+import '../../views/pages/home/home/home_page.dart';
+import '../../views/pages/home/splash/splash_page.dart';
+import '../../views/pages/home/web_view/web_view_page.dart';
 
 class AppRoute {
   BuildContext context;
